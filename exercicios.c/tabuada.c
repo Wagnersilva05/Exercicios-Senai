@@ -9,22 +9,22 @@ int main(){
 	
 	
 	
-	printf("\nTabuada de multiplicação do numero 2\n");
+	printf("\nTabuada de multiplicaÃ§Ã£o do numero 2\n");
 	for (i = 1; i <= 10; i++){
 		
 		printf("%d x %d = %d \n", 2,i, i*2);
 	}
-		printf("\nTabuada de multiplicão de numero 3\n");
+		printf("\nTabuada de multiplicÃ£o de numero 3\n");
 		for (i = 1; i <=10; i++){
 		
 		printf("%d x %d = %d \n", 3,i, i*3);
 	}
-		printf("\nTabuada de multiplicação de numero 4\n");
+		printf("\nTabuada de multiplicaÃ§Ã£o de numero 4\n");
 		for (i = 1; i <=10; i++){
 		
 		printf("%d x %d = %d \n", 4,i, i*4);
 	}
-		printf("\nTabuada de multiplicação de numero 5\n");
+		printf("\nTabuada de multiplicaÃ§Ã£o de numero 5\n");
 		for (i = 1; i <=10; i++){
 		
 		printf("%d x %d = %d \n", 5,i, i*5);
