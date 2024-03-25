@@ -6,7 +6,7 @@ int main(){
 	
 	int i;
 	
-  	printf("\nTabuada de multiplicação de numero 5\n");
+  	printf("\nTabuada de multiplicaÃ§Ã£o de numero 5\n");
 		for (i = 1; i <=10; i++){
 		
 		printf("%d x %d = %d \n", 5,i, i*5);
