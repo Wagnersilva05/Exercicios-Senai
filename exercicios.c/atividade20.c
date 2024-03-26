@@ -6,24 +6,24 @@ int main(){
 	
 	float nota, media, soma = 0;
 	int i;
-	
+
+
+	for(i = 1; i <=2; i++){
 	do{
 		
-	for(i = 1; i <=2; i++){
-	
-	printf("Digite a %iº nota: ", i);
+	printf("Digite a %iÂº nota: ", i);
 	scanf("%f", &nota);
 
 	soma += nota;
-	media = nota / 2;
-		
-	}
 	
 	}while(nota < 0 || nota > 10);
 	
-	printf("A média do aluno é: %.1f", media);
+	}	
+	media = nota / 2;
 	
+	printf("A mÃ©dia do aluno Ã©: %.1f", media);
 	
+	return 0;
 	
 	
 	
