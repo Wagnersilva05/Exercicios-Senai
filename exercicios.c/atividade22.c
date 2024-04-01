@@ -32,5 +32,5 @@ int main () {
 	media = soma / nota;
 	
 	printf("\n == Exibindo resultados===\n");
-	printf("Média: %.f \n", media);
+	printf("MÃ©dia: %.1f \n", media);
 }
