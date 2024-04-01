@@ -32,10 +32,11 @@ int main () {
         mediaValoresPar = mediaValoresPar / par;
         media = soma / contador;
 
+         system ("cls");
         printf("Quantidade de numeros pares: %i\n", par);
         printf("Quantidades de numeros impares: %i\n", impar);
-        printf("Média de valores pares: %.1f\n", mediaValoresPar);
-        printf("Média geral: %.1f\n", media);
+        printf("MÃ©dia de valores pares: %.1f\n", mediaValoresPar);
+        printf("MÃ©dia geral: %.1f\n", media);
      
 
 
