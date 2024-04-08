@@ -3,7 +3,7 @@
 #include <limits.h>
 #include <time.h>
 #include <stdlib.h>
-#include <unistd.h> // para utilizar a função sleep
+
 
 
 int main() {
