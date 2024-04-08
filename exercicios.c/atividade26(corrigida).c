@@ -33,8 +33,6 @@ int main() {
     if (contadorGeral == 0) {
         printf("Não foi informado um número positivo.");
     } else {
-        // cast
-        // 2 -> 2.0
         mediaGeral = somaGeral / (float) contadorGeral;
         mediaPares = somaPares / (float) pares;
        
