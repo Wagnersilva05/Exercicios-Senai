@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <limits.h>
-
+#define TAM 5
 
 int main () {
 	
 	
 	
-	int numero[5];
+	int numero[TAM];
 	int maiorValor = INT_MIN, menorValor = INT_MAX;
 	int i;
 	
 	
 	printf("Digite numeros:\n");
-	for(i = 0; i < 5; i++){
+	for(i = 0; i < TAM; i++){
 		printf("numero %d: ", i + 1);
 		scanf("%d", &numero[i]);
 	
@@ -20,7 +20,7 @@ int main () {
 
 	
 	 printf("\nExibindo os numeros:\n");
-	for(i = 0; i < 5; i++){
+	for(i = 0; i < TAM; i++){
 		printf("Numero %d: %d\n", i+1, numero[i]);
 		
 		if( numero[i] > maiorValor){
