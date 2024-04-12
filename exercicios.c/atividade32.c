@@ -1,41 +1,40 @@
 #include <stdio.h>
-#include <limits.h>
-
-#define TAM 6
+#include <locale.h>
 
 
-int main () {
+int main (){
+	setlocale(LC_ALL, "");
 	
-	
-	
-	int numero[TAM];
-	int pares = 0, impares = 0;
+	char listaNomes[5][200];
+	int listaIdade[5];
 	int i;
 	
 	
-	printf("Digite numeros:\n");
-	for(i = 0; i < TAM; i++){
-		printf("numero %d: ", i + 1);
-		scanf("%d", &numero[i]);
 	
+	
+	for(i = 0; i < 5; i++){
+	printf("Digite o %i° nome: ", i+1);
+	scanf("%s", &listaNomes[i]);
+	
+	printf("Digite o %i° idade: ", i+1);
+	scanf("%i", &listaIdade[i]);
 	}
+	
+	
+	
+	printf("\nMostrando resultados\n");
+	
+	for(i = 0; i < 5; i++){
+	printf("%iº nome: %s \n", i+1, listaNomes[i]);
+	printf("%iº idade: %i: \n", i+1, listaIdade[i]);
+}
 
 	
-	 printf("\nExibindo os numeros:\n");
-	for(i = 0; i < TAM; i++){
-		printf("Numero %d: %d\n", i+1, numero[i]);
-		
-	if(numero[i] % 2 == 0){
-		pares++;
-	}else if(numero[i] % 2 != 0){
-		impares++;
-	}
-
 	
-	}
 	
-	printf("\nNumero impares: %d ", impares);
-	printf("\nNumeros pares: %d", pares);
 	
-	 return 0;
+	
+	
+	
+	return 0;
 }
