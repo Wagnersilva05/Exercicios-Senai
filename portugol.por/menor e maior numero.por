@@ -17,13 +17,13 @@ programa {
     }senao se(segundoNumero > primeiroNumero e segundoNumero > terceiroNumero){
       maiorNumero = segundoNumero
     }senao{
-      maiorNumero = segundoNumero
+      maiorNumero = terceiroNumero
     }
 
     se (primeiroNumero < segundoNumero e primeiroNumero < terceiroNumero){
-      maiorNumero = terceiroNumero
+      menorNumero = primeiroNumero
     }senao se(segundoNumero < primeiroNumero e segundoNumero < terceiroNumero){
-    menorNumero = terceiroNumero}
+    menorNumero = segundoNumero}
     senao{
       menorNumero = terceiroNumero
     }
