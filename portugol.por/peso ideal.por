@@ -10,7 +10,7 @@ programa {
     escreva("Digite sua altura: ")
     leia(altura)
 
-    escolha(peso){
+    escolha(sexo){
 
       caso masculino :
       peso = (72.7 * altura) - 58
