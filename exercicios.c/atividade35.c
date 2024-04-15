@@ -1,37 +1,48 @@
 #include <stdio.h>
 #include <locale.h>
 
-#define TAM 6
-int main (){
+int main(){
 	setlocale(LC_ALL, "");
 	
 	
-	int numero[TAM];
-	int i;
+	int pares = 0, impares = 0, positivos = 0, negativos = 0, valor;
+	int i, quantidadeNumeros = 0;
 	
 	
+	 do{
+	 
+	 		
+	 	printf("Digite o um valor: ");
+	 	scanf("%i", &valor);
+	 	
+	 	
+	 	if(valor != 0){
+	 	 	quantidadeNumeros++;
+		  }
+		  
+	 	if(valor % 2 == 0){
+	 		pares++;
+		 }else if(valor % 2 != 0){
+		 	impares++;
+		 }
+		 
+		 if(valor > 0){
+		 	positivos++;
+		 }else if(valor < 0){
+		 	negativos++;
+		 }
+		 	
+		 
 	
-	for(i = 0; i < TAM; i++){
-		do{
-		
-		printf("Digite o %iº numero: ", i+1);
-		scanf("%i", &numero[i]);
-		
-		while(numero[i] % 2 == 0 || numero[i] < 0);
-	}
-	
- }
-	
-	
-		
-		
-
-	
-	printf("\n===Mostrando resultado===\n");
-	
-	for(i TAM - 1; i >= 0; i--){
-		
-		printf("%iº numero: %i\n", i+1, numero[i]);
-	}
+	 	
+	 }while(valor != 0);
+	 
+	 printf("\nQuantidade de pares: %i\n", pares);
+	 printf("Quantidade de impares: %i\n", impares);
+	 printf("Quantidade de numeros positivos: %i\n", positivos);
+	 printf("Quantidade de numeros negativos: %i\n", negativos);
+	 printf("Quantidade de numeros inserdos: %i\n", quantidadeNumeros);
+	 
+	 
 	return 0;
 }
