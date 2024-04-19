@@ -6,20 +6,20 @@
 int main(){
 	setlocale(LC_ALL, "");
 	
-	char integrantes[5][200];
-	char bandaMusical[3][5][200];
-	int i,j; 
+	char bandaMusical[3][200];
+	char integrantes[3][5][200];
+	int i, j; 
 	
 	
 	for(i = 0; i < 3; i++){
 		
-		printf("%iª Banda: ", i+1);
-		scanf("%s", &bandaMusical[i]);
+		printf("%iÂª Banda: ", i+1);
+		fgets(bandaMusical[i], sizeof(bandaMusical[i]), stdin);
 		
 		for(j = 0; j < 5; j++){
-			fflush(stdin);
-			printf("%iº Integrante: ", j+1);
-			scanf("%s", &integrantes[i][j]);
+	
+			printf("%iÂº Integrante: ", j+1);
+			fgets(integrantes[i][j], sizeof(integrantes[i][j]), stdin);
 		}
 	}
 		system("cls");
@@ -28,11 +28,11 @@ int main(){
 	 
 	 for(i = 0; i < 3; i++){
 	 	
-	 	printf("%iª Banda: %s\n", i+1, bandaMusical[i]);
+	 	printf("\n%iÂª Banda: %s\n", i+1, bandaMusical[i]);
 	 	
 	 	for(j = 0; j < 5; j++){
 	 		
-	 		printf("%iº Integrante: %s\n", j+1, integrantes[i][j]);
+	 		printf("%iÂº Integrante: %s", j+1, integrantes[i][j]);
 		 }
 	 }
 	 
