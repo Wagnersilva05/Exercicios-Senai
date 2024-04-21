@@ -17,16 +17,17 @@ bool loginCorreto, senhaCorreto;
 	 do{
 	 
 	 printf("Digite seu login: ");
-	 scanf("%s", &login);
+	 gets(login);
+	 
 	 
 	 printf("Digite sua senha: ");
-	 scanf("%s", &senha);
+	 gets(senha);
 	 
 	 loginCorreto = strcmp(login, loginCadastrado) == 0;
 	 senhaCorreto = strcmp(senha, senhaCadastrada) == 0;
 	 
-	 
-}while (!loginCorreto && !senhaCorreto);
+	
+}while (!loginCorreto || !senhaCorreto);
 
   printf("\nBem vindo!");
 
