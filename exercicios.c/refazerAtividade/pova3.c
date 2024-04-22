@@ -34,7 +34,7 @@ int main(){
             printf("4 - Mostar telefone e email\n");
             printf("0 - Sair do programa\n");
 
-            printf("Qual opção deseja? ");
+            printf("Qual opÃ§Ã£o deseja? ");
             scanf("%i", &opcao);
 
             switch (opcao)
@@ -59,11 +59,12 @@ int main(){
                 case 4:
                 printf("Telefone adicionado: %i\n", telefone);
                 printf("Email adicionado: %s\n", email);
+                break;
 
                 case 0:
                 break;
             default:
-                printf("Opção Invalida!");
+                printf("OpÃ§Ã£o Invalida!");
                 sleep(4);
                 system("cls");
                 break;
