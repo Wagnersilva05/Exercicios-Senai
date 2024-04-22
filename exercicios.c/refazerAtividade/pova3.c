@@ -54,11 +54,13 @@ int main(){
                 case 3:
                 printf("Idade adicionado: %i\n", idade);
                 printf("Telefone adicionado: %i\n", telefone);
+                sleep(4);
                 break;
 
                 case 4:
                 printf("Telefone adicionado: %i\n", telefone);
                 printf("Email adicionado: %s\n", email);
+                sleep(4);
                 break;
 
                 case 0:
