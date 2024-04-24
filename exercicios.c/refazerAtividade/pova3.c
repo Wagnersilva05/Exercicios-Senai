@@ -7,8 +7,8 @@
 int main(){
     setlocale(LC_ALL, "");
 
-    int idade, telefone;
-    char email[200], nome[200];
+    int idade;
+    char email[200], nome[200], telefone[20];
     int opcao;
 
 
@@ -22,7 +22,7 @@ int main(){
         scanf("%s", &email);
 
         printf("Telefone: ");
-        scanf("%i", &telefone);
+        scanf("%s", &telefone);
 
         fflush(stdin);
 
@@ -53,12 +53,12 @@ int main(){
 
                 case 3:
                 printf("Idade adicionado: %i\n", idade);
-                printf("Telefone adicionado: %i\n", telefone);
+                printf("Telefone adicionado: %s\n", telefone);
                 sleep(4);
                 break;
 
                 case 4:
-                printf("Telefone adicionado: %i\n", telefone);
+                printf("Telefone adicionado: %s\n", telefone);
                 printf("Email adicionado: %s\n", email);
                 sleep(4);
                 break;
